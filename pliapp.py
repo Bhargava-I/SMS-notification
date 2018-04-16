@@ -6,7 +6,7 @@ app = Flask(__name__, static_url_path='')
 
 @app.route('/send/')
 def outbound_sms():
-    client = plivo.RestClient(auth_id = 'MAZTYXNTQYMTBIYTLHZD', auth_token = 'MzdiM2QxMTU2NzhlZjBiY2RmYThjZWY0ZjkyYmEx')
+    client = plivo.RestClient(auth_id = '', auth_token = '')
 
     try:
         response = client.messages.create(
